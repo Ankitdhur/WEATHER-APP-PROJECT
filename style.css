@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.upper{
+    background-color: darkgrey;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;;
+}
+
+.input{
+    width: 30%;
+    height: 30px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: darkgrey;
+}
+
+
+.lower{
+    background-color: lightslategrey;
+    height: calc(100vh - 120px);
+    position: relative;
+}
+
+img{
+    width: 8rem;
+    position: absolute;
+    top: 27%;
+    left: 60%;
+    opacity: 1;
+    animation: image 2s linear 6s 3 ;
+    animation-fill-mode: forwards;
+    }
+    .Weather{
+        position: absolute;
+        top: 50%;
+        left: 63%;
+        font: 1em sans-serif;;
+        font-weight: bold;
+        animation: Weather 2s linear 1s 1  forwards;
+        opacity: 1;
+        color: white;
+    }
+    .temp{
+        position: absolute;
+        top: 50%;
+        left: 36.5%;
+        font: 1em sans-serif;;
+        font-weight: bold;
+        animation: Weather 2s linear 1s 1  forwards;
+        color: white;
+    }
+    .locationtime{
+        position: absolute;
+        top: 50%;
+        left: 46%;
+        font: 1em sans-serif;;
+        font-weight: bold;
+        animation: Weather 2s linear 1s 1  forwards;
+        color: white;
+        
+    }
+        
+@keyframes image {
+    0% {opacity: 0;
+    }
+    100% {opacity: 1;
+        rotate: 360deg;
+    
+}
